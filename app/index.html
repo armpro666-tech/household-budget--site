@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harbor &amp; Home Budget — The Alvarez Household</title>
+<meta name="description" content="A household budget site for the Alvarez family: track income and spending, plan budgets by category, stay on top of bills, and save toward goals.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand">Harbor <span>&amp;</span> Home</div>
+    <div class="brand-sub">Budget · The Alvarez Household<br>November 2026 · USD ($)</div>
+    <nav id="nav">
+      <a class="navlink" href="#/" data-route="">Dashboard</a>
+      <a class="navlink" href="#/transactions" data-route="transactions">Transactions</a>
+      <a class="navlink" href="#/budget" data-route="budget">Budget Planner</a>
+      <a class="navlink" href="#/bills" data-route="bills">Bills <span class="pill" id="bills-pill"></span></a>
+      <a class="navlink" href="#/goals" data-route="goals">Savings Goals</a>
+      <a class="navlink" href="#/reports" data-route="reports">Reports</a>
+    </nav>
+    <div class="side-foot">
+      All figures in US dollars.<br>
+      Your edits are saved in this browser (localStorage) — nothing leaves your device.
+    </div>
+  </aside>
+  <main class="main">
+    <div class="content" id="view"></div>
+  </main>
+</div>
+<div id="modal-root"></div>
+<script type="module" src="main.js"></script>
+</body>
+</html>
